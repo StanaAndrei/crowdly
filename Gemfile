@@ -72,6 +72,9 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
   gem "ffi"
+  gem "minitest-reporters"
+  gem 'guard'
+  gem 'guard-minitest'
 end
 
 group :production do
