@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.1.2"
 
 gem 'bcrypt'
-
+gem 'byebug'
 gem 'bootstrap-sass'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
@@ -55,7 +55,7 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "sqlite3", "~> 1.4"
-  gem 'byebug', '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
+  #gem 'byebug', '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
 
 end
 

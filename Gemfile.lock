@@ -261,7 +261,7 @@ DEPENDENCIES
   bcrypt
   bootsnap
   bootstrap-sass
-  byebug (= 11.0.1)
+  byebug
   capybara
   ffi
   guard
