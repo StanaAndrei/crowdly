@@ -6,6 +6,10 @@ ruby "3.1.2"
 gem 'bcrypt'
 gem 'byebug'
 gem 'bootstrap-sass'
+gem 'turbolinks'
+gem 'sass-rails'
+#gem 'webpacker', '~> 3.5'
+
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3"
@@ -47,7 +51,7 @@ gem "tzinfo-data"
 gem "bootsnap", require: false
 
 # Use Sass to process CSS
-# gem "sassc-rails"
+gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
