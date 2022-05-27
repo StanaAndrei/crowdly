@@ -8,6 +8,9 @@ gem 'byebug'
 gem 'bootstrap-sass'
 gem 'turbolinks'
 gem 'sass-rails'
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 #gem 'webpacker', '~> 3.5'
 
 
