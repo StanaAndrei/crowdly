@@ -11,6 +11,7 @@ gem 'sass-rails'
 gem 'faker'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+gem 'active_storage_validations'
 #gem 'webpacker', '~> 3.5'
 
 

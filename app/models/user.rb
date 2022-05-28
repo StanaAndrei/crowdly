@@ -1,4 +1,7 @@
 class User < ApplicationRecord
+    has_many :microposts, dependent: :destroy
+
+
     VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
     before_save { self.email.downcase! }
@@ -20,5 +23,9 @@ class User < ApplicationRecord
         cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
                                                       BCrypt::Engine.cost
         BCrypt::Password.create(string, cost: cost)
+    end
+
+    def feed
+        Micropost.where("user_id = ?", id)
     end
 end
